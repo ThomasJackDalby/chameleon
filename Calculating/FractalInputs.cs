@@ -40,7 +40,7 @@ namespace Chameleon
             else if (prop[0] == "load") loadInputsFile(prop[1]);
             else if (prop[0] == "save") SaveInputsFileName = prop[1];
             else if (prop[0] == "fout") OutputName = prop[1];
-            else throw new Exception("Unknown calculation property");
+            else throw new Exception(String.Format("Unknown calculation property [{0}]", prop[0]));
         }
         private void loadInputsFile(string filename)
         {
@@ -93,7 +93,5 @@ namespace Chameleon
                 SaveInputsFileName = null,
             };
         }
-
-
     }
 }

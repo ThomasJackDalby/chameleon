@@ -1,0 +1,6 @@
+# ignore all build folders
+bin/*
+obj/*
+
+# Ignore VS files
+*.suo
