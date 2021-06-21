@@ -1,17 +1,8 @@
-﻿using Chameleon.Fractals;
-using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Drawing;
-using System.IO;
-using System.Linq;
-using System.Runtime.InteropServices;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System;
 
 namespace Chameleon
 {
-	public class Program
+    public class Program
 	{
         static void Main(string[] args)
         {
@@ -39,7 +30,10 @@ namespace Chameleon
                     }
                 }             
             }
-            catch (Exception e) { Tools.DealWithPoorCoding(e); }
+            catch (Exception e)
+            {
+                Tools.DealWithPoorCoding(e);
+            }
         }
 
         private static void showHelp()
@@ -47,6 +41,5 @@ namespace Chameleon
             Console.WriteLine("BWAHAHAHAHA THERE IS NO HELP!");
             Console.ReadLine();
         }
-    
 	}
 }

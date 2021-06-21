@@ -2,9 +2,6 @@
 using System.Collections.Generic;
 using System.Drawing;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Chameleon
 {
@@ -18,7 +15,6 @@ namespace Chameleon
                 BinaryWriter bw = new BinaryWriter(s);
                 bw.Write(data.GetLength(0));
                 bw.Write(data.GetLength(1));
-
                 for (int i = 0; i < data.GetLength(0); i++)
                 {
                     for (int j = 0; j < data.GetLength(1); j++)

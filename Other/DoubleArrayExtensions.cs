@@ -3,7 +3,7 @@ using System.Text;
 
 namespace Chameleon
 {
-	public static class DoubleArrayExtensions
+    public static class DoubleArrayExtensions
 	{
 		public static void DisplayMap(double[,] map)
 		{
@@ -41,6 +41,5 @@ namespace Chameleon
 			}
 			return min;
 		}
-
 	}
 }

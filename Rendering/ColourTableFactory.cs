@@ -2,7 +2,7 @@ using System;
 
 namespace Chameleon
 {
-	public static class ColourTableFactory
+    public static class ColourTableFactory
 	{
 		public static int[][] Create(string name, string[] args)
 		{
@@ -15,7 +15,6 @@ namespace Chameleon
 		{
 			int i = 0;
 			int length = int.Parse(args[i++]);
-			//bool hsv = bool.Parse(args[i++]);
 
 			int r1 = int.Parse(args[i++]);
 			int g1 = int.Parse(args[i++]);
@@ -49,13 +48,11 @@ namespace Chameleon
 			}
 			return colourTable;
 		}
-
 		public static int[][] BasicGrayScale(string[] args)
 		{
 			int[][] colourTable = new int[255][];
 			for(int i=0;i<255;i++) colourTable[i] = new int[] { i, i, i };
 			return colourTable;
 		}
-
 	}
 }

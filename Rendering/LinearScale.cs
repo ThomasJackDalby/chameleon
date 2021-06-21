@@ -1,18 +1,13 @@
-using System;
-
 namespace Chameleon
 {
-	public class LinearScale : IColourMapping
+    public class LinearScale : IColourMapping
 	{
 		public double Cy { get;set; }
 		public double Cx { get;set; }
 	 	public double M { get; set; }	
-		
 		public int[][] ColourTable { get; set; }
-
 		public bool Loop { get; set; }	
 		public bool Mirror { get; set; }	
-
 
 		public LinearScale(string[] args, int[][] colourTable)
 		{
